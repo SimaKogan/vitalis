@@ -4,6 +4,25 @@ Whole-food recipes, a strict **gluten-free, soy-free and mineral-friendly** coll
 
 Built with **React 19, TypeScript and Vite**. No UI framework: all styling is hand-written CSS with light and dark themes.
 
+<p align="center">
+  <img src="docs/screenshots/home.jpg" alt="Vitalis home page with the healthy plate" width="100%">
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/recipes.jpg" alt="Gluten-free and soy-free recipe collection"><br><sub><b>Strict gluten-free, soy-free collection</b></sub></td>
+    <td width="50%"><img src="docs/screenshots/calculator.jpg" alt="Calorie and macro calculator"><br><sub><b>Calorie and macro calculator</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/menu.jpg" alt="Weekly menu"><br><sub><b>Weekly menu with shopping list</b></sub></td>
+    <td width="50%"><img src="docs/screenshots/labs.jpg" alt="Lab results analyzer"><br><sub><b>Lab results analyzer (PDF read in the browser)</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/fitness.jpg" alt="Workouts with interval timer"><br><sub><b>Workouts and interval timer</b></sub></td>
+    <td width="50%"><img src="docs/screenshots/hebrew.jpg" alt="Hebrew right-to-left interface"><br><sub><b>Hebrew, right to left (also English and Russian)</b></sub></td>
+  </tr>
+</table>
+
 ## Features
 
 - **Three languages: English, Русский, עברית.** Full right-to-left layout for Hebrew, correct plural forms for Russian, and the choice is remembered. Every recipe, rule, workout and lab note is translated, and a test fails if a key is missing.
@@ -43,6 +62,7 @@ To add a recipe, add it to `src/data/recipes.ts` using ingredient ids from the c
 ## Project structure
 
 ```
+docs/screenshots/   images used in this README
 src/
   data/        ingredients, recipes, rules, workouts, lab markers
   i18n/        UI dictionaries (en/ru/he), translated content, language provider

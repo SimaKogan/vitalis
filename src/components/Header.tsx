@@ -5,10 +5,21 @@ import { LANGS, LANG_LABEL, useI18n, type Lang } from '../i18n'
 
 function Logo() {
   return (
-    <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
-      <circle cx="32" cy="32" r="20" fill="none" stroke="#f3b93b" strokeWidth="5" />
-      <path d="M32 12a20 20 0 0 1 0 40z" fill="#2f9e74" />
-      <path d="M32 32h20a20 20 0 0 1-8 16z" fill="#b02a5b" />
+    <svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="logo-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#16473e" />
+          <stop offset="1" stopColor="#0a211e" />
+        </linearGradient>
+        <linearGradient id="logo-leaf" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#7fe0a8" />
+          <stop offset="1" stopColor="#2f9e74" />
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="15" fill="url(#logo-bg)" />
+      <path d="M32 54C14 46 10 26 12 11c17 1 36 6 40 24 1 8-6 17-20 19z" fill="url(#logo-leaf)" />
+      <path d="M20 22l12 20 12-20" fill="none" stroke="#0e2b27" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="49" cy="14" r="5" fill="#f3b93b" />
     </svg>
   )
 }
